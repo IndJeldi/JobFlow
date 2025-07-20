@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(153, 60%, 45%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(43, 96%, 49%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(207, 90%, 54%);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(224, 71.4%, 4.1%);
+  --foreground: hsl(210, 20%, 98%);
+  --muted: hsl(215, 25%, 12%);
+  --muted-foreground: hsl(217.9, 10.6%, 64.9%);
+  --popover: hsl(224, 71.4%, 4.1%);
+  --popover-foreground: hsl(210, 20%, 98%);
+  --card: hsl(224, 71.4%, 4.1%);
+  --card-foreground: hsl(210, 20%, 98%);
+  --border: hsl(215, 25%, 12%);
+  --input: hsl(215, 25%, 12%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(153, 60%, 45%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(43, 96%, 49%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(210, 20%, 98%);
+  --ring: hsl(207, 90%, 54%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-slate-50 text-foreground;
+  }
+}
+
+/* Custom job search styles */
+.job-card-hover {
+  @apply hover:shadow-md transition-shadow duration-200;
+}
+
+.skill-tag {
+  @apply px-2 py-1 text-xs rounded-full font-medium;
+}
+
+.skill-tag-blue {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.skill-tag-purple {
+  @apply bg-purple-100 text-purple-800;
+}
+
+.skill-tag-pink {
+  @apply bg-pink-100 text-pink-800;
+}
+
+.skill-tag-green {
+  @apply bg-green-100 text-green-800;
+}
+
+.match-badge-high {
+  @apply bg-green-100 text-green-800;
+}
+
+.match-badge-medium {
+  @apply bg-amber-100 text-amber-800;
+}
+
+.match-badge-low {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.status-pending {
+  @apply bg-amber-100 text-amber-800;
+}
+
+.status-reviewed {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.status-interview {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-rejected {
+  @apply bg-red-100 text-red-800;
+}
+
+.status-accepted {
+  @apply bg-green-100 text-green-800;
+}
